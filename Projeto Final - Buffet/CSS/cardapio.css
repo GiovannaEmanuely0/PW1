@@ -1,0 +1,146 @@
+body{
+    background-color:#987c59;
+}
+header{
+    background-color: #c1af9b;
+    height: auto;
+    width: 100%;
+}
+header div .logo{
+    width:190px ;
+    height: 130px;
+    margin: 0% 43%;
+    padding-bottom: 0%;
+}
+.divLogo{
+    border-bottom: 1px solid #fff;
+}
+.divMenu{
+    padding: 0.5px 0px;
+}
+.link{   
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+ }
+ .link:hover{
+    background-color: #70614f;
+    border-radius: 20px;
+    padding: 5px 10px;
+ }
+ li{
+    display: inline-block;
+    margin: 0% 8%;
+ }
+ ul{
+    list-style-type: none;
+}
+.primeira{
+    background-image: url(../IMAGE/locacao-espaco-casamento1.jpg);
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 400px;
+    margin: 1% 15%;
+}
+h1{
+    text-align: center;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+.container{
+    background-color: #c1af9b;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1%;
+    border-radius: 15px;
+}
+.divisao{
+    position: relative;
+    width: 95%;
+    height: 205px;
+    background-color: #c1af9b;
+    margin: 0% 2.5%;
+    border-bottom: 1px solid #fff;
+}
+.divImg{
+    position: absolute;
+    left: 0%;
+    width: 230px;
+    height: 200px;
+}
+.images{
+    height: 200px;
+    width: 290px;
+    border-radius: 15px;
+
+}
+.divTexto{
+    position: absolute;
+    left: 21%;
+    width: 79%;
+    height: 200px;
+    background-color: #c1af9b;
+}
+.divisao .divTexto p{
+    padding: 0% 1%;
+    text-align: justify;
+    font-size: 30px;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+.divTexto:hover{
+    background-color: #70614f;
+    color: #fff;
+}
+
+.footer{
+    position:relative;
+    background-color: #70614f;
+    width: 100%;
+    height: 150px;
+}
+.contato{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    font-family: "Merriweather", system-ui;
+}
+.endereco{
+    position: absolute;
+    top: 5%;
+    left: 40%;
+    font-family: "Merriweather", system-ui;
+}
+.redes{
+    position: absolute;
+    top: 5%;
+    left: 70%;
+    font-family: "Merriweather", system-ui;
+}
+.text1{
+    position: absolute;
+    bottom: 1%;
+    left: 35%;
+    font-family: "Merriweather", system-ui;
+}
+.redes2{
+    width: 40px;
+    height: 40px;
+}
