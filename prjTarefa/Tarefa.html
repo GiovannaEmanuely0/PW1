@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa</title>
+
+    <style>
+        body{
+            /* margin: 0;
+            padding: 0; */
+            font-family: "Afacad Flux", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:
+                "slnt" 0;
+        }
+        .conteiner{
+            height: 100%;
+            width: 60%;
+            margin: 0 20%;
+            background-color: #23599f;
+            border-radius: 20px;
+            padding: 1%;
+        }
+        .text{
+            text-align: center;
+            height: 200px;
+            width: 40%;
+            background-color: rgba(0, 0, 0, 0.5);
+            margin: 0 30%;
+            padding: 1%;
+            border-radius: 20px;
+            color: #fff;
+        }
+        input{
+            height: 25px;
+            width: 200px;
+            border-radius: 10px;
+            margin-bottom: 2%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: 1px solid #000;
+        }
+        li{
+            list-style-type: none;
+            border: 1px solid #000;
+            border-radius: 10px;
+            height: 25px;
+            width: 60%;
+            padding: 1%;
+            margin: 1% 18%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+        }
+        button{
+            background-color: #dba000;
+            color: #000;
+            height: 40px;
+            width: 100px;
+            border-radius: 10px;
+            border: 0px;
+        }
+        button:hover{
+            background-color: #846000;
+            
+        }
+        p{
+            margin: 2% 0;
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux&family=Comfortaa:wght@300..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="conteiner">
+        <div class="text">
+            <h1>Lista de Tarefas</h1>
+            <p>Adicione suas tarefas</p>
+            <input type="text" id="adicionarTarefa" placeholder="Adicione suas tarefas"><br>
+            <button type="button" onclick="Tarefa()" id="botao">Adicionar Tarefa</button>
+        </div>
+        <div class="list">
+            <p id="listagem"></p>
+            <ul id="lista"></ul>
+        </div>
+    </section>
+    <script>
+            function Tarefa(){
+                
+            //Essa linha pega a mensagem e exibe ela na tag P com a id mensagem
+            let mensagem = "Tarefa adicionada com sucesso!"
+
+            //Nessa linha ele pega aquilo que o usuário digitou e transforma em um valor
+            //que será passado para a variável tarefa
+            const adicionarTarefa = document.getElementById("adicionarTarefa")
+            let tarefa = adicionarTarefa.value.trim()
+            //o trim() retira os espaços
+
+            //se o valor do input for vazio mostre uma mensagem de erro
+
+            if(tarefa == ""){
+                let mensagemErro = "Erro! Digite uma mensagem para adicionar a lista"
+                alert(mensagemErro)
+            } else {
+                alert(mensagem)
+
+                let listagem = "Lista Atualizada:"
+                document.getElementById("listagem").textContent = listagem;
+
+                //Aqui ele pega o elemento que é a UL que possui a id = lista
+                let lista = document.getElementById("lista")
+
+                //Aqui ele pega uma variável e nela será criado o elemento li
+                let tarefaNova = document.createElement("li")
+
+                //Onde essa variável irá escrever um texto por isso o .textContent, o texto em si será
+                //o que o usuário irá escrever que está na variável tarefa
+                tarefaNova.textContent = tarefa;
+
+                //aqui o elemento lista, que é o UL, irá acrescentar um elemento filho, dentro dele por isso filho
+                //e esse elemento filho é o LI que agora está na variavel tarefaNova
+                lista.appendChild(tarefaNova)
+
+            }
+            //após o usuario escrever a variável vai ficar vazia pois o valor dela será o nada.
+                adicionarTarefa.value = ""
+
+        }
+    </script>
+</body>
+</html>
