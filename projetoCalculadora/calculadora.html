@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="background">
+        <div class="secao_principal">
+            <div class="visor">
+                <!-- <input id="resultado" class="tela" type="text"> -->
+                 <p id="resultado" class="tela"></p>
+            </div>
+            <div class="numeros">
+                <button id="one" class="botao" type="button" onclick="mostrar('1')">1</button>
+                <button id="two" class="botao" type="button" onclick="mostrar('2')">2</button>
+                <button id="three" class="botao" type="button" onclick="mostrar('3')">3</button>
+                <button id="four" class="botao" type="button" onclick="mostrar('4')">4</button>
+                <button id="five" class="botao" type="button" onclick="mostrar('5')">5</button>
+                <button id="six" class="botao" type="button" onclick="mostrar('6')">6</button>
+                <button id="seven" class="botao" type="button" onclick="mostrar('7')">7</button>
+                <button id="eight" class="botao" type="button" onclick="mostrar('8')">8</button>
+                <button id="nine" class="botao" type="button" onclick="mostrar('9')">9</button>
+                <button id="point" class="botao" type="button" onclick="mostrar('.')">.</button>
+                <button id="zero" class="botao" type="button" onclick="mostrar('0')">0</button>
+                <button id="apagar" class="botao2" type="button" onclick="clean()">c</button>
+            </div>
+            <div class="operadores">
+                <button id="adicao" class="operacao" type="button" onclick="mostrar('+')">+</button>
+                <button id="subtracao" class="operacao" type="button" onclick="mostrar('-')">-</button>
+                <button id="multiplicacao" class="operacao" type="button" onclick="mostrar('x')">x</button>
+                <button id="divisao" class="operacao" type="button" onclick="mostrar('/')">/</button>
+                <button id="igualdade"  class="operacao2" type="button" onclick="calcular()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
